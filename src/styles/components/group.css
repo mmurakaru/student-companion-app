@@ -2,7 +2,6 @@
   border-radius: 6px;
   border: solid 1px;
   border-color: var(--grey);
-  overflow: hidden;
   position: relative;
 }
 
