@@ -1,3 +1,26 @@
 .nav {
-  background-color: indigo;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+.nav__links {
+  background-color: white;
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.nav__img--inactiv {
+  height: 21px;
+  width: 21px;
+  opacity: 0.6;
+}
+
+.nav__img--activ {
+  height: 21px;
+  width: 21px;
 }
