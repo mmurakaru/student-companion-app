@@ -1,3 +1,19 @@
 .header {
-  background-color: lightcoral;
+  background-image: url(../assets/background_shape_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.header__headline {
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.header__subheadline {
+  align-self: flex-start;
+  color: var(--light-blue);
 }
