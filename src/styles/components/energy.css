@@ -140,6 +140,28 @@
   height: 33px;
 }
 
+.energy__labels {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.energy__labels span {
+  padding: 2px 8.5px;
+  border-radius: 3px;
+}
+
+.energy__label1 {
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+.energy__label2 {
+  background-color: var(--xlight-orange);
+  color: var(--dark-orange);
+}
+
 /*Rate your current energy level*/
 
 .energy__buttons {
