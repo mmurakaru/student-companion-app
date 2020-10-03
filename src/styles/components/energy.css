@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 170px;
+  overflow: hidden;
 }
 
 .energy__graph {
@@ -77,12 +78,12 @@
 
 .energy__graph .you {
   left: 64px;
-  background-color: var(--color-you);
+  background-color: var(--dark-orange);
   border-color: transparent;
 }
 .energy__graph .otherstudents {
   left: 76px;
-  background-color: var(--color-otherstudents);
+  background-color: var(--dark-blue);
   border-color: transparent;
 }
 
@@ -140,3 +141,32 @@
 }
 
 /*Rate your current energy level*/
+
+.energy__buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4;
+}
+
+.energy__button2 {
+  opacity: 0.75;
+}
+
+.energy__button3 {
+  opacity: 0.5;
+}
+
+.energy__button4 {
+  opacity: 0.25;
+}
+
+.energy__button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: var(--dark-orange);
+}
