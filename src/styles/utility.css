@@ -48,6 +48,30 @@
   box-shadow: 0 2px 11px rgba(25, 50, 81, 0.2);
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
