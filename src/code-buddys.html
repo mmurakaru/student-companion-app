@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Student Companion App</title>
   </head>
-  <body>
-    <header>team 1 - master layout</header>
+  <body class="layout-grid">
+    <header class="header">
+      <h1 class="header__headline bold-16">Journal</h1>
+      <p class="header__subheadline regular-12"></p>
+    </header>
 
-    <main>
+    <main class="main scrolling">
       <section class="group">
         <img class="group__plus" src="/src/assets/icons/plus.svg" alt="" />
         <div class="group__member">
@@ -61,7 +63,24 @@
         </div>
       </section>
     </main>
-
-    <footer>team 1 - master layout</footer>
+    <footer class="nav center-flex">
+      <nav class="nav__links box-shadow--blue">
+        <a href="index.html"
+          ><img src="assets/icons/dashboardicon-inactive.svg" alt="Dashboard"
+        /></a>
+        <a href="code-buddys.html"
+          ><img src="assets/icons/buddyicon-active.svg" alt="Code-Buddys"
+        /></a>
+        <a href="teams.html"
+          ><img src="assets/icons/teamicon-inactive.svg" alt="Code-Team"
+        /></a>
+        <a href="energy.html"
+          ><img src="assets/icons/energyicon-inactive.svg" alt="Energy"
+        /></a>
+        <a href="journal.html"
+          ><img src="assets/icons/journalicon-inactive.svg" alt="Journal"
+        /></a>
+      </nav>
+    </footer>
   </body>
 </html>

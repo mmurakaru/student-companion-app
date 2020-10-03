@@ -3,5 +3,6 @@
 @import './basic.css';
 @import './header.css';
 @import './nav.css';
+@import './journal-create.css';
 @import './components/group.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
