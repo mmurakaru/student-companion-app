@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import './colors.css';
 @import './utility.css';
 @import './basic.css';
@@ -5,4 +6,6 @@
 @import './nav.css';
 @import './journal-create.css';
 @import './components/group.css';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import './components/energy.css';
+
+
