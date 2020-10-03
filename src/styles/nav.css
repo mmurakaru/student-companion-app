@@ -13,14 +13,3 @@
   padding: 12px;
   border-radius: 10px;
 }
-
-.nav__img--inactiv {
-  height: 21px;
-  width: 21px;
-  opacity: 0.6;
-}
-
-.nav__img--activ {
-  height: 21px;
-  width: 21px;
-}
