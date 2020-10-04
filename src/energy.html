@@ -1,107 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Student Companion App</title>
-  </head>
-  <body class="layout-grid">
+</head>
+
+<body class="layout-grid">
     <header class="header">
-      <h1 class="header__headline bold-16">Energy</h1>
-      <p class="header__subheadline regular-12"></p>
+        <h1 class="header__headline bold-16">Energy</h1>
+        <p class="header__subheadline regular-12"></p>
     </header>
     <main class="main scrolling">
-      <section class="energy regular-12--light-blue">
-        <h2 class="semibold-14 mb-10">Energy Level throughout the day</h2>
-        <div class="chart mb-10">
-          <div class="chart-container">
-            <div class="chart__col chart__col--1">
-              <div class="chart__bars">
-                <div class="chart__bar chart__bar--1"></div>
-                <div class="chart__bar chart__bar--2"></div>
-              </div>
-              <div class="chart__bar__label">10:00</div>
+        <section class="energy mb-30 regular-12--light-blue">
+            <h2 class="semibold-14 mb-10">Energy Level throughout the day</h2>
+            <div class="chart mb-10">
+                <div class="chart-container">
+                    <div class="chart__col chart__col--1">
+                        <div class="chart__bars">
+                            <div class="chart__bar chart__bar--1"></div>
+                            <div class="chart__bar chart__bar--2"></div>
+                        </div>
+                        <div class="chart__bar__label">10:00</div>
+                    </div>
+                    <div class="chart__col chart__col--2">
+                        <div class="chart__bars">
+                            <div class="chart__bar chart__bar--1"></div>
+                            <div class="chart__bar chart__bar--2"></div>
+                        </div>
+                        <div class="chart__bar__label">15:30</div>
+                    </div>
+                    <div class="chart__col chart__col--3">
+                        <div class="chart__bars">
+                            <div class="chart__bar chart__bar--1"></div>
+                            <div class="chart__bar chart__bar--2"></div>
+                        </div>
+                        <div class="chart__bar__label">16:15</div>
+                    </div>
+                    <div class="chart__col chart__col--4">
+                        <div class="chart__bars">
+                            <div class="chart__bar chart__bar--1"></div>
+                            <div class="chart__bar chart__bar--2"></div>
+                        </div>
+                        <div class="chart__bar__label">18:25</div>
+                    </div>
+                    <div class="chart__col chart__col--5">
+                        <div class="chart__bars">
+                            <div class="chart__bar chart__bar--1"></div>
+                            <div class="chart__bar chart__bar--2"></div>
+                        </div>
+                        <div class="chart__bar__label">19:00</div>
+                    </div>
+                </div>
+                <div class="scale">
+                    <div class="scale__labels">
+                        <div>100</div>
+                        <div>75</div>
+                        <div>50</div>
+                        <div>25</div>
+                        <div>0</div>
+                        <!-- <div></div> -->
+                    </div>
+                    <div class="scale__lines">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
-            <div class="chart__col chart__col--2">
-              <div class="chart__bars">
-                <div class="chart__bar chart__bar--1"></div>
-                <div class="chart__bar chart__bar--2"></div>
-              </div>
-              <div class="chart__bar__label">15:30</div>
+            <div class="energy__labels">
+                <span class="energy__label1 mr-10">Other students</span>
+                <span class="energy__label2">You</span>
             </div>
-            <div class="chart__col chart__col--3">
-              <div class="chart__bars">
-                <div class="chart__bar chart__bar--1"></div>
-                <div class="chart__bar chart__bar--2"></div>
-              </div>
-              <div class="chart__bar__label">16:15</div>
-            </div>
-            <div class="chart__col chart__col--4">
-              <div class="chart__bars">
-                <div class="chart__bar chart__bar--1"></div>
-                <div class="chart__bar chart__bar--2"></div>
-              </div>
-              <div class="chart__bar__label">18:25</div>
-            </div>
-            <div class="chart__col chart__col--5">
-              <div class="chart__bars">
-                <div class="chart__bar chart__bar--1"></div>
-                <div class="chart__bar chart__bar--2"></div>
-              </div>
-              <div class="chart__bar__label">19:00</div>
-            </div>
-          </div>
-          <div class="scale">
-            <div class="scale__labels">
-              <div>100</div>
-              <div>75</div>
-              <div>50</div>
-              <div>25</div>
-              <div>0</div>
-              <!-- <div></div> -->
-            </div>
-            <div class="scale__lines">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div class="energy__labels">
-          <span class="energy__label1 mr-10">Other students</span>
-          <span class="energy__label2">You</span>
-        </div>
-      </section>
+        </section>
 
-      <h2 class="semibold-14 mb-10">Rate your current energy level:</h2>
-      <section class="energy__buttons">
-        <button class="energy__button">100%</button>
-        <button class="energy__button energy__button2">75%</button>
-        <button class="energy__button energy__button3">50%</button>
-        <button class="energy__button energy__button4">25%</button>
-      </section>
+        <h2 class="semibold-14 mb-10">Rate your current energy level:</h2>
+        <section class="energy__buttons">
+            <button class="energy__button">100%</button>
+            <button class="energy__button energy__button2">75%</button>
+            <button class="energy__button energy__button3">50%</button>
+            <button class="energy__button energy__button4">25%</button>
+        </section>
     </main>
     <footer class="nav center-flex">
-      <nav class="nav__links box-shadow--blue">
-        <a href="index.html"
-          ><img src="assets/icons/dashboardicon-inactive.svg" alt="Dashboard"
-        /></a>
-        <a href="code-buddys.html"
-          ><img src="assets/icons/buddyicon-inactive.svg" alt="Code-Buddys"
-        /></a>
-        <a href="teams.html"
-          ><img src="assets/icons/teamicon-inactive.svg" alt="Code-Team"
-        /></a>
-        <a href="energy.html"
-          ><img src="assets/icons/energyicon-active.svg" alt="Energy"
-        /></a>
-        <a href="journal.html"
-          ><img src="assets/icons/journalicon-inactive.svg" alt="Journal"
-        /></a>
-      </nav>
+        <nav class="nav__links box-shadow--blue">
+            <a href="index.html"><img src="assets/icons/dashboardicon-inactive.svg" alt="Dashboard" /></a>
+            <a href="code-buddys.html"><img src="assets/icons/buddyicon-inactive.svg" alt="Code-Buddys" /></a>
+            <a href="teams.html"><img src="assets/icons/teamicon-inactive.svg" alt="Code-Team" /></a>
+            <a href="energy.html"><img src="assets/icons/energyicon-active.svg" alt="Energy" /></a>
+            <a href="journal.html"><img src="assets/icons/journalicon-inactive.svg" alt="Journal" /></a>
+        </nav>
     </footer>
-  </body>
+</body>
+
 </html>

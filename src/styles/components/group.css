@@ -1,26 +1,26 @@
 .group {
-  border-radius: 6px;
-  border: solid 1px;
-  border-color: var(--grey);
-  position: relative;
+    border-radius: 6px;
+    border: solid 1px;
+    border-color: var(--grey);
+    position: relative;
 }
 
 .group__member {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  text-align: center;
-  border-bottom: solid 1px;
-  border-color: var(--grey);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-color: var(--grey);
 }
 
 .group__member:last-of-type {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .group__plus {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 20.33px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 20.33px;
 }
