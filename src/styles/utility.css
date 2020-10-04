@@ -26,6 +26,7 @@
   font-weight: 600;
   color: var(--dark-blue);
   font-size: 0.875rem;
+  text-transform: uppercase;
 }
 
 .regular-12 {
@@ -40,7 +41,13 @@
   font-size: 0.75rem;
 }
 
-.center {
+.regular-12--dark-blue {
+  font-weight: 400;
+  color: var(--dark-blue);
+  font-size: 0.75rem;
+}
+
+.center-flex {
   display: flex;
   justify-content: center;
   align-items: center;
