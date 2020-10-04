@@ -1,143 +1,114 @@
-.energy {
+/*Chart*/
+.chart {
+  position: relative;
+  width: 100%;
+  min-width: 315px;
+  max-width: 450px;
+  height: 208px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scale {
+  display: flex;
+}
+
+.scale__labels {
+  width: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 170px;
-  overflow: hidden;
+  justify-content: space-between;
 }
 
-.energy__graph {
-  display: block; /* fixes layout wonkiness in FF1.5 */
-  position: relative;
-  width: 370px;
-  background: transparent;
-  font-size: 11px;
+.scale__labels div {
+  width: 100%;
+  padding-bottom: 22px;
 }
 
-.energy__graph--levels {
-  position: relative;
-  top: -161px;
-  left: 2px;
-  width: 265px;
-  height: 300px;
-  z-index: 1;
-  margin-bottom: -200px;
-  font-size: 10px;
-  font-family: 'fira-sans-2', Verdana, sans-serif;
+.scale__lines {
+  flex-grow: 1;
 }
 
-.energy__graph--level {
-  height: 40px;
+.scale__lines div {
+  height: 12px;
+  margin-bottom: 22px;
+  border-bottom: 1px dotted var(--light-blue);
 }
 
-.energy__graph tr,
-.energy__graph th,
-.energy__graph td {
+.chart-container {
   position: absolute;
-  bottom: 0;
-  width: 150px;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  width: 260px;
+  height: 202px;
+  right: calc((100% - 32px - 260px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.energy__graph .energy__graph--bars1 {
-  left: 0;
-}
-.energy__graph .energy__graph--bars2 {
-  left: 60px;
-}
-.energy__graph .energy__graph--bars3 {
-  left: 120px;
-}
-.energy__graph .energy__graph--bars4 {
-  left: 180px;
-  border-right: none;
-}
-.energy__graph .energy__graph--bars5 {
-  left: 240px;
+.chart__bars {
+  display: flex;
+  align-items: flex-end;
 }
 
-.energy__graph tbody th {
-  bottom: -1.75em;
-  vertical-align: top;
-  font-weight: normal;
-  color: #333;
-}
-
-.energy__graph .bar {
+.chart__bar {
   width: 12px;
-  border: 1px solid;
-  border-bottom: none;
-  color: #000;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-.energy__graph .you {
-  left: 64px;
+.chart__bar--1 {
   background-color: var(--dark-orange);
-  border-color: transparent;
 }
-.energy__graph .otherstudents {
-  left: 76px;
+
+.chart__bar--2 {
   background-color: var(--dark-blue);
-  border-color: transparent;
 }
 
-.energy__graph--levels .energy__graph--level {
-  position: relative;
-  border-top: 1px dotted #c4c4c4;
-  width: 300px;
-}
-
-.energy__graph--level span {
-  position: absolute;
-  left: -5em;
-  top: -0.8em;
-  margin: 0 0 0 0.5em;
-}
-
-.you--1 {
+.chart__col--1 .chart__bar--1 {
   height: 175px;
 }
 
-.otherstudents--1 {
+.chart__col--1 .chart__bar--2 {
   height: 154px;
 }
 
-.you--2 {
+.chart__col--2 .chart__bar--1 {
   height: 131px;
 }
 
-.otherstudents--2 {
+.chart__col--2 .chart__bar--2 {
   height: 148px;
 }
 
-.you--3 {
+.chart__col--3 .chart__bar--1 {
   height: 157px;
 }
 
-.otherstudents--3 {
+.chart__col--3 .chart__bar--2 {
   height: 109px;
 }
 
-.you--4 {
+.chart__col--4 .chart__bar--1 {
   height: 72px;
 }
 
-.otherstudents--4 {
+.chart__col--4 .chart__bar--2 {
   height: 95px;
 }
 
-.you--5 {
+.chart__col--5 .chart__bar--1 {
   height: 47px;
 }
 
-.otherstudents--5 {
+.chart__col--5 .chart__bar--2 {
   height: 33px;
+}
+
+.chart__bar__label {
+  font-size: 12px;
+  height: 22px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .energy__labels {
