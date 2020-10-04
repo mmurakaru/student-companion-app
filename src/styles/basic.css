@@ -18,6 +18,10 @@ body {
   padding: 30px 30px 0 30px;
 }
 
+.main--journal {
+  padding-top: 25px;
+}
+
 .main::after {
   content: ' ';
   height: 90px;
