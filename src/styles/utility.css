@@ -34,6 +34,12 @@
   font-size: 0.75rem;
 }
 
+.regular-12--light-blue {
+  font-weight: 400;
+  color: var(--light-blue);
+  font-size: 0.75rem;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -55,7 +61,7 @@
 .mr-10 {
   margin-right: 10px;
 }
-  
+
 .mb-10 {
   margin-bottom: 10px;
 }
