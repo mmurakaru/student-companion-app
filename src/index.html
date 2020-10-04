@@ -1,58 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Student Companion App</title>
-</head>
+  </head>
 
-<body class="layout-grid">
+  <body class="layout-grid">
     <header class="header">
-        <h1 class="header__headline bold-16">Dashboard</h1>
+      <h1 class="header__headline bold-16">Dashboard</h1>
+      <p class="header__subheadline regular-12"></p>
     </header>
     <main class="main scrolling">
-        <h2 class="semibold-14 mb-10">Your code buddy for today:</h2>
-        <section class="group mb-30">
-            <img class="group__plus" src="./assets/icons/plus.svg" alt="" />
-            <div class="group__member">
-                <span>Sudanka Bakalowits</span>
-            </div>
-            <div class="group__member">
-                <span>Yasaman Foroutan</span>
-            </div>
-        </section>
-        <h2 class="semibold-14 mb-10">Your current team:</h2>
-        <section class="group mb-30">
-            <div class="group__member">
-                <span>Sudanka Bakalowitz</span>
-            </div>
-            <div class="group__member">
-                <span>Yasaman Foroutan</span>
-            </div>
-            <div class="group__member">
-                <span>Chioke Okonkwo</span>
-            </div>
-            <div class="group__member">
-                <span>Maria José Botín</span>
-            </div>
-            <div class="group__member">
-                <span>Tikhon Yaroslavsky</span>
-            </div>
-        </section>
-        <h2 class="semibold-14 mb-10">Yesterdays journal:</h2>
-        <!-- paste your journal here <3 -->
+      <h2 class="semibold-14 mb-10">Your code buddy for today:</h2>
+      <section class="group mb-30">
+        <img class="group__plus" src="/assets/icons/plus.svg" alt="" />
+        <div class="group__member semibold-16--light-blue">
+          <span>Sudanka Bakalowitz</span>
+        </div>
+        <div class="group__member semibold-16--light-blue">
+          <span>Yasaman Foroutan</span>
+        </div>
+      </section>
+
+      <h2 class="semibold-14 mb-10">Your current team:</h2>
+      <section class="group mb-30">
+        <div class="group__member semibold-16--light-blue">
+          <span>Sudanka Bakalowitz</span>
+        </div>
+        <div class="group__member semibold-16--light-blue">
+          <span>Yasaman Foroutan</span>
+        </div>
+        <div class="group__member semibold-16--light-blue">
+          <span>Chioke Okonkwo</span>
+        </div>
+        <div class="group__member semibold-16--light-blue">
+          <span>Maria José Botín</span>
+        </div>
+        <div class="group__member semibold-16--light-blue">
+          <span>Tikhon Yaroslavsky</span>
+        </div>
+      </section>
+      <h2 class="semibold-14 mb-10">Yesterdays journal:</h2>
+      <section class="journal-card box-shadow--blue mb-20">
+        <h2 class="semibold-14--uppercase mb-20">Yesterday</h2>
+
+        <h3 class="regular-12--light-blue mb-10">Rating:</h3>
+        <div class="journal-card__rating mb-20">
+          <img
+            class="journal-card__star"
+            src="assets/star-active.svg"
+            alt="rating 1"
+          />
+          <img
+            class="journal-card__star"
+            src="assets/star-active.svg"
+            alt="rating 2"
+          />
+          <img
+            class="journal-card__star"
+            src="assets/star-active.svg"
+            alt="rating 3"
+          />
+          <img
+            class="journal-card__star"
+            src="assets/star-inactive.svg"
+            alt="rating 4"
+          />
+          <img
+            class="journal-card__star"
+            src="assets/star-inactive.svg"
+            alt="rating 5"
+          />
+        </div>
+
+        <h3 class="regular-12--light-blue mb-10">Comprehension:</h3>
+        <div class="journal-card__comprehension mb-20">
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 1"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 2"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 3"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 4"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 5"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 6"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-active.svg"
+            alt="rating 7"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-inactive.svg"
+            alt="rating 8"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-inactive.svg"
+            alt="rating 9"
+          />
+          <img
+            class="journal-card__rectangle"
+            src="assets/rectangle-inactive.svg"
+            alt="rating 10"
+          />
+        </div>
+
+        <h3 class="regular-12--light-blue mb-10">Motto:</h3>
+        <p class="journal-card__motto semibold-16 mb-20">
+          "Thats life in the city"
+        </p>
+
+        <h3 class="regular-12--light-blue mb-10">Note:</h3>
+        <p class="journal-card__note regular-12--dark-blue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nesciunt
+          tenetur est delectus praesentium possimus quidem officia omnis
+          provident repellat!
+        </p>
+      </section>
     </main>
     <footer class="nav center-flex">
-        <nav class="nav__links box-shadow--blue">
-            <a href="index.html"><img src="assets/icons/dashboardicon-active.svg" alt="Dashboard" /></a>
-            <a href="code-buddys.html"><img src="assets/icons/buddyicon-inactive.svg" alt="Code-Buddys" /></a>
-            <a href="teams.html"><img src="assets/icons/teamicon-inactive.svg" alt="Code-Team" /></a>
-            <a href="energy.html"><img src="assets/icons/energyicon-inactive.svg" alt="Energy" /></a>
-            <a href="journal.html"><img src="assets/icons/journalicon-inactive.svg" alt="Journal" /></a>
-        </nav>
+      <nav class="nav__links box-shadow--blue">
+        <a href="index.html"
+          ><img src="assets/icons/dashboardicon-active.svg" alt="Dashboard"
+        /></a>
+        <a href="code-buddys.html"
+          ><img src="assets/icons/buddyicon-inactive.svg" alt="Code-Buddys"
+        /></a>
+        <a href="teams.html"
+          ><img src="assets/icons/teamicon-inactive.svg" alt="Code-Team"
+        /></a>
+        <a href="energy.html"
+          ><img src="assets/icons/energyicon-inactive.svg" alt="Energy"
+        /></a>
+        <a href="journal.html"
+          ><img src="assets/icons/journalicon-inactive.svg" alt="Journal"
+        /></a>
+      </nav>
     </footer>
-</body>
-
+  </body>
 </html>

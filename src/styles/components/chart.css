@@ -1,0 +1,114 @@
+/*Chart*/
+
+.chart {
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    max-width: 450px;
+    height: 208px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scale {
+    display: flex;
+}
+
+.scale__labels {
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scale__labels div {
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+.scale__lines {
+    flex-grow: 1;
+}
+
+.scale__lines div {
+    height: 12px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted var(--light-blue);
+}
+
+.chart-container {
+    position: absolute;
+    width: 260px;
+    height: 202px;
+    right: calc((100% - 32px - 260px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chart__bars {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chart__bar {
+    width: 12px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.chart__bar--1 {
+    background-color: var(--dark-orange);
+}
+
+.chart__bar--2 {
+    background-color: var(--dark-blue);
+}
+
+.chart__col--1 .chart__bar--1 {
+    height: 175px;
+}
+
+.chart__col--1 .chart__bar--2 {
+    height: 154px;
+}
+
+.chart__col--2 .chart__bar--1 {
+    height: 131px;
+}
+
+.chart__col--2 .chart__bar--2 {
+    height: 148px;
+}
+
+.chart__col--3 .chart__bar--1 {
+    height: 157px;
+}
+
+.chart__col--3 .chart__bar--2 {
+    height: 109px;
+}
+
+.chart__col--4 .chart__bar--1 {
+    height: 72px;
+}
+
+.chart__col--4 .chart__bar--2 {
+    height: 95px;
+}
+
+.chart__col--5 .chart__bar--1 {
+    height: 47px;
+}
+
+.chart__col--5 .chart__bar--2 {
+    height: 33px;
+}
+
+.chart__bar__label {
+    font-size: 12px;
+    height: 22px;
+    display: flex;
+    align-items: flex-end;
+}
+s
