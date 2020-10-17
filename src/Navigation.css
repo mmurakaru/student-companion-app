@@ -1,9 +1,8 @@
-/*.nav {
+.nav {
   position: fixed;
   bottom: 20px;
   width: 100%;
   padding: 0 20px;
-  display: none;
 }
 .nav__links {
   background-color: white;
@@ -13,5 +12,4 @@
   justify-content: space-around;
   padding: 12px;
   border-radius: 10px;
-  display: none;
-}*/
+}

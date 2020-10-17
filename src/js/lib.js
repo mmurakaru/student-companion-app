@@ -13,3 +13,17 @@ export function displayNone(selector) {
 export function display(selector) {
   selector.classList.remove('d-none')
 }
+
+export function createElement({
+  type = 'div',
+  target = document.body,
+  className,
+}) 
+{
+  const el = document.createElement(type)
+  el.className = className
+  target.appendChild(el)
+  return el
+}
+
+
