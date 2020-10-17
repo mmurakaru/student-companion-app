@@ -14,7 +14,7 @@ export default function setupNav() {
         const targetName = clickedButton.dataset.name
 
         navButtons.forEach((navButtonItem) => {
-          navButtonItem.firstElementChild.classList.add('d-none')
+ 
           navButtonItem.lastElementChild.classList.remove('d-none')
         })
 

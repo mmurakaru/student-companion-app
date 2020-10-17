@@ -2,22 +2,32 @@ import {createElement} from './js/lib'
 import './Navigation.css'
 
 
-export default function Navigation({ target, onNavigate, routes }) {
+export default function Navigation({ onNavigate, routes }) {
     console.log('Navigation')
     const el = createElement({ type: 'nav', className: 'nav__links', target: document.querySelector('footer') })
     console.log(el)
 
-    routes.forEach((route) => {
+    routes.forEach((route, index) => {
       const btn = createElement({ type: 'button', target: el })
       const navIcon = createElement( {type: 'img', target: btn })
-      navIcon.setAttribute('src', route.srcInactive)
-      //btn.addEventListener('click', () => onNavigate(route.path))
+      index === 0 ? navIcon.setAttribute('src', route.srcActive) : navIcon.setAttribute('src', route.srcInactive)
+      btn.addEventListener('click', () => {
+          onNavigate(route.path)
+          const imgs = document.querySelectorAll('nav button img')
+          imgs.forEach((img, index) => img.setAttribute('src', routes[index].srcInactive))
+          navIcon.setAttribute('src', route.srcActive)
+          console.log()
+        })
+    
+
     })
   
 
     return {}
   }
 
+
+  
 
 
   /*export default function setupNav() {
