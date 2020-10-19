@@ -11,9 +11,11 @@
 .header__headline {
   align-self: flex-end;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .header__subheadline {
   align-self: flex-start;
   color: var(--light-blue);
+  text-align: center;
 }

@@ -10,13 +10,13 @@ export default function Navigation({ onNavigate, routes }) {
     routes.forEach((route, index) => {
       const btn = createElement({ type: 'button', target: el })
       const navIcon = createElement( {type: 'img', target: btn })
-      index === 0 ? navIcon.setAttribute('src', route.srcActive) : navIcon.setAttribute('src', route.srcInactive)
+      //index === 0 ? navIcon.setAttribute('src', route.srcActive) : navIcon.setAttribute('src', route.srcInactive)
+      navIcon.src = index === 0 ? route.srcActive : route.srcInactive
       btn.addEventListener('click', () => {
           onNavigate(route.path)
-          const imgs = document.querySelectorAll('nav button img')
+          const imgs = el.querySelectorAll('button img')
           imgs.forEach((img, index) => img.setAttribute('src', routes[index].srcInactive))
           navIcon.setAttribute('src', route.srcActive)
-          console.log()
         })
     
 
