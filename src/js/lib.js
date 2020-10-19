@@ -31,8 +31,7 @@ export function createElementPlaceStart({
     className,
 }) {
     const el = document.createElement(type)
-    console.log(el)
     el.className = className
-    target.insertAdjacentHTML('afterbegin', el)
+    target.insertAdjacentElement('afterbegin', el)
     return el
 }

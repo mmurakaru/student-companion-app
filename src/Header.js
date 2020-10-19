@@ -7,15 +7,7 @@ export default function Header({
     defaultSubHeadline,
     update,
 }) {
-    console.log(defaultHeadline, defaultSubHeadline)
-        //const el = createElementPlaceStart({ type: 'header', className: 'header' })
-        //- `element.insertAdjacentHTML(position, text);` <-> fügt etwas an einem bestimmten punkt hinzu (beforebegin , afterbegin, beforeend, afterend)
-
-    document.body.insertAdjacentHTML(
-        'afterbegin',
-        '<header class="header"></header>'
-    )
-
+    createElementPlaceStart({ type: 'header', className: 'header' })
     const el = document.querySelector('header')
 
     const imgWave = createElement({ type: 'img', target: el, className: 'header__img' })
