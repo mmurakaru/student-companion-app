@@ -1,6 +1,7 @@
 import Navigation from './Navigation'
-import { getDataJsAll } from './js/lib'
+import { createElement, getDataJsAll } from './js/lib'
 import Header from './Header'
+import CodeBuddys from './CodeBuddys'
 import './styles/basic.css'
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
@@ -18,31 +19,27 @@ import energyIconInactive from '/assets/icons/energyicon-inactive.svg'
 import journalIconActive from '/assets/icons/journalicon-active.svg'
 import journalIconInactive from '/assets/icons/journalicon-inactive.svg'
 
-const headerContent = [{
-        path: '/',
-        headline: 'Dashboard',
-    },
-    {
-        path: '/code-buddys',
-        headline: 'Code Buddys',
-        subheadline: 'on Monday — 18.07.2020',
-    },
-    {
-        path: '/teams',
-        headline: 'Teams',
-        subheadline: 'for Exercise 1',
-    },
-    {
-        path: '/energy',
-        headline: 'Energy',
-    },
-    {
-        path: '/journal',
-        headline: 'Journal',
-    },
-]
 
-Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: 'SUP Headline' })
+const members = {
+    codeBuddys: [
+        ["Markus", "Jana"],
+        ["Markus", "Jana"],
+        ["Markus", "Jana"],
+        ["Markus", "Jana"]
+    ],
+    teams : [
+        ["Markus","Markus","Markus","Markus","Markus"],
+        ["Markus","Markus","Markus","Markus","Markus"]
+    ]
+}
+
+
+const header = Header({defaultHeadline: 'Dashboard', defaultSubHeadline: '1234'})
+
+const main = createElement({type: 'main', className: 'main scrolling'})
+members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
+
+createElement({type:'footer', className:'nav center-flex'})
 
 const routes = [{
         //index[0]
@@ -51,6 +48,7 @@ const routes = [{
         title: 'Dashboard',
         srcActive: dashboardIconActive,
         srcInactive: dashboardIconInactive,
+        subHeadline: ' ',
     },
     {
         //index[1]
@@ -59,6 +57,7 @@ const routes = [{
         title: 'Code Buddys',
         srcActive: buddyIconActive,
         srcInactive: buddyIconInactive,
+        subHeadline: 'on Monday — 18.07.2020',
     },
     {
         //index[2]
@@ -67,6 +66,7 @@ const routes = [{
         title: 'Teams',
         srcActive: teamIconActive,
         srcInactive: teamIconInactive,
+        subHeadline: 'for Exercise 1',
     },
     {
         //index[3]
@@ -75,6 +75,7 @@ const routes = [{
         title: 'Energy',
         srcActive: energyIconActive,
         srcInactive: energyIconInactive,
+        subHeadline: ' ',
     },
     {
         //index[4]
@@ -83,31 +84,21 @@ const routes = [{
         title: 'Journal',
         srcActive: journalIconActive,
         srcInactive: journalIconInactive,
+        subHeadline: ' ',
     },
 ]
 
+
 Navigation({ targetSelector: 'footer', onNavigate: handleNavigate, routes })
 
-function handleNavigate(path) {
-    /*const newRoute = routes.find((route) => route.path === path)
-                              header.update(newRoute.title)
-                              routes.forEach((route) =>
-                                route === newRoute ? route.component.show() : route.component.hide()
-                              )*/
 
+
+function handleNavigate(path, title, subHeadline) {
     const pages = getDataJsAll('page')
     pages.forEach((page) => {
         const pageName = page.dataset.name
         const targetName = path === '/' ? 'dashboard' : path.replace('/', '')
         page.classList.toggle('d-none', targetName !== pageName)
     })
-
-    const headers = getDataJsAll('header')
-    headers.forEach((header) => {
-        const headerName = header.dataset.name
-        const targetName = path === '/' ? 'dashboard' : path.replace('/', '')
-        header.classList.toggle('d-none', targetName !== headerName)
-    })
-
-    //console.log('Grüße von der handleNavigate')
+    header.updateHeader(title, subHeadline)
 }

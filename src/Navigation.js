@@ -14,7 +14,7 @@ export default function Navigation({ onNavigate, routes, targetSelector }) {
         navIcon.src = index === 0 ? route.srcActive : route.srcInactive
 
         btn.addEventListener('click', () => {
-            onNavigate(route.path)
+            onNavigate(route.path, route.title, route.subHeadline)
             const imgs = el.querySelectorAll('button img')
                 //imgs.forEach((img, index) => img.setAttribute('src', routes[index].srcInactive))
             imgs.forEach((img, index) => (img.src = routes[index].srcInactive))

@@ -4,8 +4,7 @@ import './Header.css'
 
 export default function Header({
     defaultHeadline,
-    defaultSubHeadline,
-    update,
+    defaultSubHeadline
 }) {
     createElementPlaceStart({ type: 'header', className: 'header' })
     const el = document.querySelector('header')
@@ -29,38 +28,10 @@ export default function Header({
     subheadline.textContent = defaultSubHeadline;
 
 
-    // füllen.
-    function update(newHeadline, newSubheadline = '') {
-        console.log('update!')
+    function updateHeader(title, subHeadline) {
+        headline.textContent = title
+        subheadline.textContent = subHeadline
     }
-}
 
-/* <header class="header">
-<h1 class="header__headline bold-16">Journal</h1>
-<p class="header__subheadline regular-12"></p>
-</header> */
-
-/*
-const headerContent = [{
-    path: '/',
-    headline: 'Dashboard',
-},
-{
-    path: '/code-buddys',
-    headline: 'Code Buddys',
-    subheadline: 'on Monday — 18.07.2020',
-},
-{
-    path: '/teams',
-    headline: 'Teams',
-    subheadline: 'for Exercise 1',
-},
-{
-    path: '/energy',
-    headline: 'Energy',
-},
-{
-    path: '/journal',
-    headline: 'Journal',
+    return {updateHeader}
 }
-]*/
