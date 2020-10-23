@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assets": "^3.0.1",
     "parcel": "^1.12.4"
   }
 }

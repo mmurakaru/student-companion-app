@@ -1,10 +1,10 @@
-/*.nav {
+.nav {
   position: fixed;
   bottom: 20px;
   width: 100%;
   padding: 0 20px;
-  display: none;
 }
+
 .nav__links {
   background-color: white;
   height: 44px;
@@ -13,5 +13,5 @@
   justify-content: space-around;
   padding: 12px;
   border-radius: 10px;
-  display: none;
-}*/
+  box-shadow: 0 2px 11px rgba(25, 50, 81, 0.2);
+}
