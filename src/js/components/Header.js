@@ -1,5 +1,6 @@
 import { createElement, createElementPlaceStart } from '../lib'
 import backgroundImg from '../../assets/background_shape_1.svg'
+import '../../styles/styles.css'
 import '../../styles/components/Header.css'
 
 export default function Header({

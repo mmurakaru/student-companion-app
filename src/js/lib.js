@@ -18,9 +18,12 @@ export function createElement({
     type = 'div',
     target = document.body,
     className,
+    attributeName,
+    attributeValue,
 }) {
     const el = document.createElement(type)
     el.className = className
+    attributeName && el.setAttribute(attributeName, attributeValue)
     target.appendChild(el)
     return el
 }

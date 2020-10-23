@@ -3,6 +3,7 @@ import { createElement, getDataJsAll } from './lib'
 import Header from './components/Header'
 import CodeBuddys from './components/CodeBuddys'
 import Teams from './components/Teams'
+import DashboardPage from './pages/DashboardPage'
 import '../styles/basic.css'
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
@@ -36,26 +37,24 @@ const members = {
 
 
 
-const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: '1234' })
+const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
+
 
 const main = createElement({ type: 'main', className: 'main scrolling' })
     //members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
-members.teams.forEach(team => Teams(team, main))
+    //members.teams.forEach(team => Teams(team, main))
 
 createElement({ type: 'footer', className: 'nav center-flex' })
 
 const routes = [{
-        //index[0]
         path: '/',
-        //component: DashboardPage({ target: el, text: 'Dashboard', hidden: false }),
-        /** variante 1 */
+        component: DashboardPage({ target: main, text: 'Dashboard', data: members }),
         title: 'Dashboard',
         subTitle: ' ',
         srcActive: dashboardIconActive,
         srcInactive: dashboardIconInactive,
     },
     {
-        //index[1]
         path: '/code-buddys',
         //component: Page({ target: el, text: 'Code Buddys', hidden: true }),
         title: 'Code Buddys',
@@ -64,7 +63,6 @@ const routes = [{
         srcInactive: buddyIconInactive,
     },
     {
-        //index[2]
         path: '/teams',
         //component: Page({ target: el, text: 'Teams', hidden: true }),
         title: 'Teams',
@@ -73,7 +71,6 @@ const routes = [{
         srcInactive: teamIconInactive
     },
     {
-        //index[3]
         path: '/energy',
         //component: Page({ target: el, text: 'Energy', hidden: true }),
         title: 'Energy',
@@ -82,7 +79,6 @@ const routes = [{
         srcInactive: energyIconInactive
     },
     {
-        //index[4]
         path: '/journal',
         //component: Page({ target: el, text: 'journal', hidden: true }),
         title: 'Journal',
