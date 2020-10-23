@@ -4,6 +4,8 @@ import Header from './components/Header'
 import CodeBuddys from './components/CodeBuddys'
 import Teams from './components/Teams'
 import DashboardPage from './pages/DashboardPage'
+import CodebuddysPage from './pages/CodebuddysPage'
+import TeamsPage from './pages/TeamsPage'
 import '../styles/basic.css'
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
@@ -56,7 +58,7 @@ const routes = [{
     },
     {
         path: '/code-buddys',
-        //component: Page({ target: el, text: 'Code Buddys', hidden: true }),
+        component: CodebuddysPage({ target: main, text: 'Code-Buddys', data: members }),
         title: 'Code Buddys',
         subTitle: 'on Monday — 18.07.2020',
         srcActive: buddyIconActive,
@@ -64,7 +66,7 @@ const routes = [{
     },
     {
         path: '/teams',
-        //component: Page({ target: el, text: 'Teams', hidden: true }),
+        component: TeamsPage({ target: main, text: 'Teams', data: members }),
         title: 'Teams',
         subTitle: 'for Exercise 1',
         srcActive: teamIconActive,
