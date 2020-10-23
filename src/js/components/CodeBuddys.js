@@ -1,6 +1,6 @@
-import { createElement, createElementPlaceStart } from './js/lib'
-import './Team.css'
-import plus from '/assets/icons/plus.svg'
+import { createElement, createElementPlaceStart } from '../lib'
+import '../../styles/components/CodeBuddys.css'
+import plus from '../../assets/icons/plus.svg'
 
 
 export default function CodeBuddys(pair, main) {

@@ -1,8 +1,9 @@
-import Navigation from './Navigation'
-import { createElement, getDataJsAll } from './js/lib'
-import Header from './Header'
-import CodeBuddys from './CodeBuddys'
-import './styles/basic.css'
+import Navigation from './components/Navigation'
+import { createElement, getDataJsAll } from './lib'
+import Header from './components/Header'
+import CodeBuddys from './components/CodeBuddys'
+import Teams from './components/Teams'
+import '../styles/basic.css'
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
 import dashboardIconInactive from '/assets/icons/dashboardicon-inactive.svg'
@@ -27,24 +28,27 @@ const members = {
         ["Mario", "Mustermann"],
         ["Torben", "Klaus"]
     ],
-    teams : [
-        ["Markus","Markus","Markus","Markus","Markus"],
-        ["Markus","Markus","Markus","Markus","Markus"]
+    teams: [
+        ["Markus", "Markus1", "Markus2", "Markus3", "Markus4"],
+        ["Hans", "Hans1", "Hans2", "Hans3", "Hans4"],
     ]
 }
 
 
-const header = Header({defaultHeadline: 'Dashboard', defaultSubHeadline: '1234'})
 
-const main = createElement({type: 'main', className: 'main scrolling'})
-members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
+const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: '1234' })
 
-createElement({type:'footer', className:'nav center-flex'})
+const main = createElement({ type: 'main', className: 'main scrolling' })
+    //members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
+members.teams.forEach(team => Teams(team, main))
+
+createElement({ type: 'footer', className: 'nav center-flex' })
 
 const routes = [{
         //index[0]
         path: '/',
-        //component: Page({ target: el, text: 'Dashboard', hidden: false }),
+        //component: DashboardPage({ target: el, text: 'Dashboard', hidden: false }),
+        /** variante 1 */
         title: 'Dashboard',
         subTitle: ' ',
         srcActive: dashboardIconActive,

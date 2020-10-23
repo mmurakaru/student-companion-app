@@ -1,5 +1,5 @@
-import { createElement } from './js/lib'
-import './Navigation.css'
+import { createElement } from '../lib'
+import '../../styles/components/Navigation.css'
 
 export default function Navigation({ onNavigate, routes, targetSelector }) {
     const el = createElement({
