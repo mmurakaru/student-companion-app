@@ -12,6 +12,7 @@
 
 .header__img {
   position: absolute;
+  height: 60px;
   z-index: -1;
   width: 100%;
 }
