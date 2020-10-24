@@ -25,12 +25,6 @@
   width: 22px;
 }
 
-.journal-card__motto {
-}
-
-.journal-card__note {
-}
-
 .journal-card__button {
   padding: 16px 48px;
   background-color: var(--dark-orange);

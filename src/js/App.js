@@ -5,7 +5,9 @@ import DashboardPage from './pages/DashboardPage'
 import CodebuddysPage from './pages/CodebuddysPage'
 import TeamsPage from './pages/TeamsPage'
 import EnergyPage from './pages/EnergyPage'
+import JournalPage from './pages/JournalPage'
 import '../styles/basic.css'
+
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
 import dashboardIconInactive from '/assets/icons/dashboardicon-inactive.svg'
@@ -36,12 +38,41 @@ const members = {
     ]
 }
 
+//x && y
+//wenn x truthy dann mache y
+
+//const x = y || z
+//wenn es y gibt x = y, wenn nicht x = z
+
+const cards = [
+    {
+        title: 'Yesterday',
+        rating: 3,
+        comprehension: 5,
+        motto: 'That\'s life in the city',
+        notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunttenetur est delectus praesentium possimus quidem officia omnis provident repellat!'
+    },
+    {
+        title: '12.07.2020',
+        rating: 4,
+        comprehension: 5,
+        motto: 'One step at a time',
+        notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit!'
+    }
+]
+console.log(cards)
+// Für später:
+
+// async function getCards() {
+//     const data = await localStorage.getItem('cards')
+//     const cardsData = JSON.parse(data)
+//     return cardsData
+// }
+
 const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
 
 
 const main = createElement({ type: 'main', className: 'main scrolling' })
-//members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
-//members.teams.forEach(team => Teams(team, main))
 
 createElement({ type: 'footer', className: 'nav center-flex' })
 
@@ -79,7 +110,7 @@ const routes = [{
 },
 {
     path: '/journal',
-    //component: Page({ target: el, text: 'journal', hidden: true }),
+    component: JournalPage({ target: main, text: 'Journal', cards }),
     title: 'Journal',
     subTitle: ' ',
     srcActive: journalIconActive,
