@@ -1,11 +1,12 @@
 import Navigation from './components/Navigation'
 import { createElement, getDataJsAll } from './lib'
 import Header from './components/Header'
-import CodeBuddys from './components/CodeBuddys'
-import Teams from './components/Teams'
+//import CodeBuddys from './components/CodeBuddys'
+//import Teams from './components/Teams'
 import DashboardPage from './pages/DashboardPage'
 import CodebuddysPage from './pages/CodebuddysPage'
 import TeamsPage from './pages/TeamsPage'
+import EnergyPage from './pages/EnergyPage'
 import '../styles/basic.css'
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
@@ -43,51 +44,51 @@ const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
 
 
 const main = createElement({ type: 'main', className: 'main scrolling' })
-    //members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
-    //members.teams.forEach(team => Teams(team, main))
+//members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
+//members.teams.forEach(team => Teams(team, main))
 
 createElement({ type: 'footer', className: 'nav center-flex' })
 
 const routes = [{
-        path: '/',
-        component: DashboardPage({ target: main, text: 'Dashboard', data: members }),
-        title: 'Dashboard',
-        subTitle: ' ',
-        srcActive: dashboardIconActive,
-        srcInactive: dashboardIconInactive,
-    },
-    {
-        path: '/code-buddys',
-        component: CodebuddysPage({ target: main, text: 'Code-Buddys', data: members }),
-        title: 'Code Buddys',
-        subTitle: 'on Monday — 18.07.2020',
-        srcActive: buddyIconActive,
-        srcInactive: buddyIconInactive,
-    },
-    {
-        path: '/teams',
-        component: TeamsPage({ target: main, text: 'Teams', data: members }),
-        title: 'Teams',
-        subTitle: 'for Exercise 1',
-        srcActive: teamIconActive,
-        srcInactive: teamIconInactive
-    },
-    {
-        path: '/energy',
-        //component: Page({ target: el, text: 'Energy', hidden: true }),
-        title: 'Energy',
-        subTitle: ' ',
-        srcActive: energyIconActive,
-        srcInactive: energyIconInactive
-    },
-    {
-        path: '/journal',
-        //component: Page({ target: el, text: 'journal', hidden: true }),
-        title: 'Journal',
-        subTitle: ' ',
-        srcActive: journalIconActive,
-        srcInactive: journalIconInactive
-    },
+    path: '/',
+    component: DashboardPage({ target: main, text: 'Dashboard', data: members }),
+    title: 'Dashboard',
+    subTitle: ' ',
+    srcActive: dashboardIconActive,
+    srcInactive: dashboardIconInactive,
+},
+{
+    path: '/code-buddys',
+    component: CodebuddysPage({ target: main, text: 'Code-Buddys', data: members }),
+    title: 'Code Buddys',
+    subTitle: 'on Monday — 18.07.2020',
+    srcActive: buddyIconActive,
+    srcInactive: buddyIconInactive,
+},
+{
+    path: '/teams',
+    component: TeamsPage({ target: main, text: 'Teams', data: members }),
+    title: 'Teams',
+    subTitle: 'for Exercise 1',
+    srcActive: teamIconActive,
+    srcInactive: teamIconInactive
+},
+{
+    path: '/energy',
+    component: EnergyPage({ target: main, text: 'Energy', data: members }),
+    title: 'Energy',
+    subTitle: ' ',
+    srcActive: energyIconActive,
+    srcInactive: energyIconInactive
+},
+{
+    path: '/journal',
+    //component: Page({ target: el, text: 'journal', hidden: true }),
+    title: 'Journal',
+    subTitle: ' ',
+    srcActive: journalIconActive,
+    srcInactive: journalIconInactive
+},
 ]
 
 

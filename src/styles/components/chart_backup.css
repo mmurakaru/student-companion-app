@@ -5,6 +5,7 @@
     width: 100%;
     min-width: 280px;
     max-width: 450px;
+    height: 208px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,9 +36,8 @@
     border-bottom: 1px dotted var(--light-blue);
 }
 
-.graph-container {
+.chart-container {
     position: absolute;
-    top: 0;
     width: 260px;
     height: 202px;
     right: calc((100% - 32px - 260px) / 2);
@@ -46,90 +46,68 @@
     align-items: flex-end;
 }
 
-.graph__bars {
+.chart__bars {
     display: flex;
     align-items: flex-end;
 }
 
-.graph__bar {
+.chart__bar {
     width: 12px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
-.graph__bar--1 {
+.chart__bar--1 {
     background-color: var(--dark-orange);
 }
 
-.graph__bar--2 {
+.chart__bar--2 {
     background-color: var(--dark-blue);
 }
 
-.graph__col--1 .graph__bar--1 {
+.chart__col--1 .chart__bar--1 {
     height: 175px;
 }
 
-.graph__col--1 .graph__bar--2 {
+.chart__col--1 .chart__bar--2 {
     height: 154px;
 }
 
-.graph__col--2 .graph__bar--1 {
+.chart__col--2 .chart__bar--1 {
     height: 131px;
 }
 
-.graph__col--2 .graph__bar--2 {
+.chart__col--2 .chart__bar--2 {
     height: 148px;
 }
 
-.graph__col--3 .graph__bar--1 {
+.chart__col--3 .chart__bar--1 {
     height: 157px;
 }
 
-.graph__col--3 .graph__bar--2 {
+.chart__col--3 .chart__bar--2 {
     height: 109px;
 }
 
-.graph__col--4 .graph__bar--1 {
+.chart__col--4 .chart__bar--1 {
     height: 72px;
 }
 
-.graph__col--4 .graph__bar--2 {
+.chart__col--4 .chart__bar--2 {
     height: 95px;
 }
 
-.graph__col--5 .graph__bar--1 {
+.chart__col--5 .chart__bar--1 {
     height: 47px;
 }
 
-.graph__col--5 .graph__bar--2 {
+.chart__col--5 .chart__bar--2 {
     height: 33px;
 }
 
-.graph__bar__label {
+.chart__bar__label {
     font-size: 12px;
     height: 22px;
     display: flex;
     align-items: flex-end;
 }
-
-.chart__labels {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  
-  .chart__labels span {
-    padding: 2px 8.5px;
-    border-radius: 3px;
-  }
-  
-  .chart__label--1 {
-    color: white;
-    background-color: var(--dark-blue);
-  }
-  
-  .chart__label--2 {
-    background-color: var(--xlight-orange);
-    color: var(--dark-orange);
-  }
