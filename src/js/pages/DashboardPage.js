@@ -4,11 +4,10 @@ import Teams from '../components/Teams'
 
 
 export default function DashboardPage({ text, target, data }) {
-    const attributes = [{attributeName: 'data-name', attributeValue: 'dashboard'} , {attributeName: 'data-js', attributeValue: 'page'}]
-    const section = createElement({ type: 'section', attributes})
+    const attributes = [{ attributeName: 'data-name', attributeValue: 'dashboard' }, { attributeName: 'data-js', attributeValue: 'page' }]
+    const section = createElement({ type: 'section', attributes })
     target.appendChild(section)
     const headline1 = createElement({ type: 'h2', className: 'semibold-14 mb-10', target: section })
-    headline1.textContent = 'Your Code Buddy for Today:'
 
     // headline apply
     CodeBuddys(data.codeBuddys[0], section) // members müssen wir übergeben.

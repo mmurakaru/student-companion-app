@@ -37,8 +37,6 @@ const members = {
     ]
 }
 
-
-
 const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
 
 
