@@ -23,10 +23,10 @@ export function createElement({
     const el = document.createElement(type)
     el.className = className
     attributes && attributes.forEach(attribute => {
-        el.setAttribute(attribute.attributeName, attribute.attributeValue)
-    })
-    //const attributes = [{ attributeName: 'data-name', attributeValue: 'dashboard' }, { attributeName: 'data-js', attributeValue: 'page' }]
-    //attributeName && el.setAttribute(attributeName, attributeValue)
+            el.setAttribute(attribute.attributeName, attribute.attributeValue)
+        })
+        //const attributes = [{ attributeName: 'data-name', attributeValue: 'dashboard' }, { attributeName: 'data-js', attributeValue: 'page' }]
+        //attributeName && el.setAttribute(attributeName, attributeValue)
     target.appendChild(el)
     return el
 }
