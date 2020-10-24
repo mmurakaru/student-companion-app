@@ -99,6 +99,27 @@
   margin-bottom: 30px;
 }
 
+.my-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .d-none {
   display: none;
+}
+
+.orange {
+  background-color: var(--dark-orange);
+}
+
+.orange-75 {
+  background-color: var(--medium-orange);
+}
+
+.orange-50 {
+  background-color: var(--light-orange);
+}
+
+.orange-25 {
+  background-color: var(--xlight-orange);
 }
