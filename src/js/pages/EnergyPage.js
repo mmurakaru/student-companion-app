@@ -19,22 +19,4 @@ export default function EnergyPage({ text, target, data }) {
     Button({ target: section, text: '75%', className: 'orange-75 my-5' })
     Button({ target: section, text: '50%', className: 'orange-50 my-5' })
     Button({ target: section, text: '25%', className: 'orange-25 my-5' })
-
 }
-
-
-
-{/* <main data-js="page" data-name="energy" class="main scrolling d-none">
-<section class="energy mb-30 regular-12--light-blue">
-    <h2 class="semibold-14 mb-10">Energy Level throughout the day</h2>
-   
-</section>
-
-<h2 class="semibold-14 mb-10">Rate your current energy level:</h2>
-<section class="energy__buttons">
-    <button class="energy__button">100%</button>
-    <button class="energy__button energy__button2">75%</button>
-    <button class="energy__button energy__button3">50%</button>
-    <button class="energy__button energy__button4">25%</button>
-</section>
-</main> */}

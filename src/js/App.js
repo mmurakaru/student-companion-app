@@ -1,8 +1,6 @@
 import Navigation from './components/Navigation'
 import { createElement, getDataJsAll } from './lib'
 import Header from './components/Header'
-//import CodeBuddys from './components/CodeBuddys'
-//import Teams from './components/Teams'
 import DashboardPage from './pages/DashboardPage'
 import CodebuddysPage from './pages/CodebuddysPage'
 import TeamsPage from './pages/TeamsPage'

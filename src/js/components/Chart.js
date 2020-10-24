@@ -13,13 +13,13 @@ export default function Chart({ target }) {
         scaleLabelEl.innerText = label
     })
     const scaleLinesEl = createElement({ className: 'scale__lines', target: scaleEl })
-    Array(5).fill().forEach(line => {
+    labels.forEach(line => {
         const scaleLineEl = createElement({ target: scaleLinesEl })
     })
 
     // GRAPH
     const graphContainerEL = createElement({ className: 'graph-container', target: chartEl })
-    const graphCols = ['10:00', '15:30', '1615', '18:25', '19:00']
+    const graphCols = ['10:00', '15:30', '16:15', '18:25', '19:00']
     graphCols.forEach((colLabel, index) => {
         const graphColEL = createElement({ className: `graph__col graph__col--${index + 1}`, target: graphContainerEL })
         const graphBarsEl = createElement({ className: 'graph__bars', target: graphColEL })
