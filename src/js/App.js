@@ -5,7 +5,9 @@ import DashboardPage from './pages/DashboardPage'
 import CodebuddysPage from './pages/CodebuddysPage'
 import TeamsPage from './pages/TeamsPage'
 import EnergyPage from './pages/EnergyPage'
+import JournalPage from './pages/JournalPage'
 import '../styles/basic.css'
+
 
 import dashboardIconActive from '/assets/icons/dashboardicon-active.svg'
 import dashboardIconInactive from '/assets/icons/dashboardicon-inactive.svg'
@@ -40,8 +42,6 @@ const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
 
 
 const main = createElement({ type: 'main', className: 'main scrolling' })
-//members.codeBuddys.forEach(pair => CodeBuddys(pair, main))
-//members.teams.forEach(team => Teams(team, main))
 
 createElement({ type: 'footer', className: 'nav center-flex' })
 
@@ -79,7 +79,7 @@ const routes = [{
 },
 {
     path: '/journal',
-    //component: Page({ target: el, text: 'journal', hidden: true }),
+    component: JournalPage({ target: main, text: 'Journal', data: members }),
     title: 'Journal',
     subTitle: ' ',
     srcActive: journalIconActive,

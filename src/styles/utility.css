@@ -59,6 +59,11 @@
   align-items: center;
 }
 
+.jfc {
+  display: flex;
+  justify-content: center;
+}
+
 .scrolling {
   overflow-y: scroll;
 }
@@ -102,6 +107,17 @@
 .my-5 {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-200 {
+  width: 200px;
 }
 
 .d-none {
