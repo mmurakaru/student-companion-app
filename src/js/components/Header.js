@@ -1,6 +1,7 @@
-import { createElement, createElementPlaceStart } from './js/lib'
-import backgroundImg from './assets/background_shape_1.svg'
-import './Header.css'
+import { createElement, createElementPlaceStart } from '../lib'
+import backgroundImg from '../../assets/background_shape_1.svg'
+import '../../styles/styles.css'
+import '../../styles/components/Header.css'
 
 export default function Header({
     defaultHeadline,
@@ -33,5 +34,5 @@ export default function Header({
         subheadline.textContent = subHeadline
     }
 
-    return {updateHeader}
+    return { updateHeader }
 }
