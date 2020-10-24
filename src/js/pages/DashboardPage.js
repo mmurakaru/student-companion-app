@@ -14,12 +14,8 @@ export default function DashboardPage({ text, target, data }) {
     const headline2 = createElement({ type: 'h2', className: 'semibold-14 mb-10 mt-24', target: section })
     headline2.textContent = 'Your current Team:'
     Teams(data.teams[0], section)
-}
 
-
-/*
-[
-const members = {
+    const members = {
     codeBuddys: [
         ["Markus", "Jana"],
         ["Torsten", "Cindy"],
@@ -30,7 +26,5 @@ const members = {
         ["Markus", "Markus1", "Markus2", "Markus3", "Markus4"],
         ["Hans", "Hans1", "Hans2", "Hans3", "Hans4"],
     ]
+    }
 }
-
-
-*/
