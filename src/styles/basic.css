@@ -51,3 +51,10 @@ button {
   background: none;
   border: 0;
 }
+
+textarea {
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none;
+}

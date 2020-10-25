@@ -65,6 +65,11 @@
   flex-direction: column;
 }
 
+.jfsa {
+  display: flex;
+  justify-content: space-around;
+}
+
 .scrolling {
   overflow-y: scroll;
 }
@@ -127,34 +132,25 @@
 
 .orange {
   background-color: var(--dark-orange);
+  color: #fff;
 }
 
 .orange-75 {
   background-color: var(--medium-orange);
+  color: #fff;
 }
 
 .orange-50 {
   background-color: var(--light-orange);
+  color: #fff;
 }
 
 .orange-25 {
   background-color: var(--xlight-orange);
-}
- display: none;
-}
-
-.orange {
-  background-color: var(--dark-orange);
+  color: #fff;
 }
 
-.orange-75 {
-  background-color: var(--medium-orange);
-}
-
-.orange-50 {
-  background-color: var(--light-orange);
-}
-
-.orange-25 {
-  background-color: var(--xlight-orange);
+.white {
+  background-color: #fff;
+  color: var(--dark-blue);
 }

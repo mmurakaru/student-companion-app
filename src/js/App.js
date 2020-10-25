@@ -44,30 +44,28 @@ const members = {
 //const x = y || z
 //wenn es y gibt x = y, wenn nicht x = z
 
-const cards = [
-    {
-        title: 'Yesterday',
-        rating: 3,
-        comprehension: 5,
-        motto: 'That\'s life in the city',
-        notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunttenetur est delectus praesentium possimus quidem officia omnis provident repellat!'
-    },
-    {
-        title: '12.07.2020',
-        rating: 4,
-        comprehension: 5,
-        motto: 'One step at a time',
-        notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit!'
-    }
+const cards = getCards() || [
+    // {
+    //     title: 'Yesterday',
+    //     rating: 3,
+    //     comprehension: 5,
+    //     motto: 'That\'s life in the city',
+    //     notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunttenetur est delectus praesentium possimus quidem officia omnis provident repellat!'
+    // },
+    // {
+    //     title: '12.07.2020',
+    //     rating: 4,
+    //     comprehension: 5,
+    //     motto: 'One step at a time',
+    //     notes: 'Lorem ipsum dolor sit amet consectetur adipisicing elit!'
+    // }
 ]
-console.log(cards)
 // Für später:
-
-// async function getCards() {
-//     const data = await localStorage.getItem('cards')
-//     const cardsData = JSON.parse(data)
-//     return cardsData
-// }
+function getCards() {
+    const data = localStorage.getItem('cards')
+    const cardsData = JSON.parse(data)
+    return cardsData
+}
 
 const header = Header({ defaultHeadline: 'Dashboard', defaultSubHeadline: ' ' })
 
@@ -102,7 +100,7 @@ const routes = [{
 },
 {
     path: '/energy',
-    component: EnergyPage({ target: main, text: 'Energy', data: members }),
+    component: EnergyPage({ target: main, text: 'Energy' }),
     title: 'Energy',
     subTitle: ' ',
     srcActive: energyIconActive,
